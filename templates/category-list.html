@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block content %}
+
+<div>
+  {% for category in categories %}
+ 
+  <a href="{% url "courses" %}?category={{ category.id }}">{{ category.name }}</a>
+  <a href="{% url "courses" %}?category={{ category.id }}">{{ course.name }}</a>
+  
+  {% endfor %}
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+

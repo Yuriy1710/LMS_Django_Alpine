@@ -1,0 +1,34 @@
+{% load static %}
+
+<div class="flex flex-row items-center w-full text-white bg-slate-800 h-18">
+  <ul class="flex items-center space-x-12 text-2xl basis-3/4">
+    <li><a href="/" class="flex items-center">
+      <img src="{% static 'images/24.png' %}" width="100" class="ml-4">
+      <p class="mx-4 my-4 text-3xl italic text-yellow-300">SmartPlatform</p>
+    </a></li>
+  
+    
+    <li>
+      <a href="{% url "categories" %}">Categories</a>
+    </li>
+    
+
+    <li>
+      <a href="">My Courses</a>
+    </li>
+  </ul>
+  
+  <ul class="flex items-center space-x-8 basis-1/4">
+    <img src="{% static 'images/user.png' %}" class="w-6">
+    <li>
+      <a href="" class="">Log In</a>
+    </li>
+    <li>
+      <a href="" class="">Sign Up</a>
+    </li>
+  </ul>
+</div>
+
+
+
+

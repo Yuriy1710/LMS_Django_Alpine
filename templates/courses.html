@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+{% for course in courses %}
+<a href="{% url "course" course.id %}">{{ course.name }}</a>
+{% endfor %}
+
+{% endblock content %}
+
+
+
+
+
